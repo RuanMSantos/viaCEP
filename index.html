@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form>
+        <div class="campo">
+            <h1>Via CEP</h1>
+
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" id="cep" size="10" maxlength="9" onblur="pesquisarCep(this.value)"> <!-- size limita a quantidade de digitos enquanto maxLength impede de enviar-->
+        <!--onblur é um evento de quando o input perde o foco-->
+        <!--this.value pega exatamente o valor que esta no input-->
+        </div>
+        
+        <div class="campo">
+            <label for="rua">Rua:</label>
+            <input type="text" name="rua" id="rua" size="60">
+        </div>
+        
+        <div class="campo">
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro" size="40">
+        </div>
+        
+        <div class="campo">
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" size="40">
+        </div>
+        
+        <div class="campo">
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado" size="10">
+        </div>
+            
+        <div class="campo">
+            <label for="ibge">IBGE:</label>
+            <input type="text" name="ibge" id="ibge" size="8">
+        </div>
+</body>
+</html>
